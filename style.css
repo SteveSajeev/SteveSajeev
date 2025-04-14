@@ -1,12 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+html {
+	scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'Noto Sans';
+    font-family: 'Maven Pro';
     color: aliceblue;
-    background-color: black;
+    background-color: rgb(10,10,15);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -14,24 +21,26 @@ body {
 body a {
     color: rgb(220, 220, 220);
 }
-body p {
-    margin: 0.7em 0;
-}
 
+
+/* Header styling */
 header {
+    position:sticky;
+	top:0;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 1em 2.8em;
+	background-color: rgb(10,10,15);
+	box-shadow: 0 0 10px 1px black;
 }
-nav {
-    position: sticky;
+header h2 {
+	font-family: 'Montserrat';
 }
 nav ul {
     display: flex;
     justify-content: space-between;
-
 }
 nav ul li {
     list-style-type: none;
@@ -39,57 +48,140 @@ nav ul li {
     margin: 0 1em;
 }
 nav a {
+	display: block;
     text-decoration: none;
     font-size: 1em;
-    transition: all 0.2s;
+    transition: transform 0.2s;
     border-bottom: 1px solid rgba(255, 255, 255, 0);
 }
 nav a:hover {
-    border-bottom: 1px solid white;
+	color: rgb(245, 30,45);
+	font-weight: 600;
+	transform: scale(1.5);
 }
 
 
 
 
-
-main {
-    max-width: 38em;
-    padding: 0 2em;
-}
-
-
-
-
+/* Main styling */
 section {
-    margin: 0.8em 0 2.7em 0;
-}
-
-section h3 {
-    margin: 0.1em 0;
+	padding: 0 7em;
+	width: 100%;
 }
 
 
 
+/* HOME */
+#home {
+	height: 60vh;
+}
+#home div {
+	margin: 6em 0  0 2em;
+	max-width: 28em;
+}
+#home h2 {
+	font-family: 'Montserrat';
+	font-size: 2.9em;
+	font-weight: 900;
+}
+#home h2 span {
+	color: rgb(245, 30,45);
+}
+#home p {
+	font-family: 'Taviraj';
+	font-size: 1.4em;
+	font-weight: 200;
+	line-height: 1em;
+	max-width: 100%;
+}
 
-.pitem {
-    width: 28m;
+
+#svgtop {
+	background-color: rgb(20,20,40);
+	transition: all 2s;
+}
+#svgbottom {
+	background-color: rgb(10, 10, 15);
+}
+
+/* About Section */
+
+#about {
+	background-color: rgb(20,20,40);
+	padding-top: 2em;
+	padding-bottom: 8em;
+}
+#about h3 {
+	font-family: 'Montserrat';
+	font-size: 2.5em;
+	font-weight: 700;
+}
+#about p {
+	margin-top: 0.8em;
+	font-size: 1.2em;
+}
+
+
+/* Projects Section */
+
+#projects {
+	padding-top: 2em;
+	padding-bottom: 5em;
+}
+
+#projects h3 {
+	font-family: 'Montserrat';
+	font-size: 2.5em;
+	font-weight: 700;
+}
+#projects .items {
+	margin-top: 3em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+#projects .items .pitem {
     background-color: rgba(23, 36, 156, 0.64);
-    padding: 0.7em 1em;
+    padding: 2em 1.7em;
     border-radius: 0.7em;
 }
 
-.pitem button{
-    border: none;
-    background-color: rgb(201, 215, 249);
-    border-radius: 0.2em;
-    padding: 0.3em 0.8em;
-    margin: 0.3em 0;
+#projects .pitem h4 {
+	font-family: 'Montserrat';
+	font-size: 1.8em;
+}
+#projects .pitem p {
+	font-family: 'Maven Pro';
+	font-size: 1.2em;
+	margin-bottom: 1.3em;
+}
 
+#projects .pitem a {
+	display: block;
+	color: black;
+	font-weight: 500;
+	width: 100%;
+    background-color: rgb(201, 215, 249);
+    border-radius: 0.3em;
+    padding: 0.3em 0.8em;
+    margin: 0.8em 0 0 0;
 }
 
 
 
 
 footer {
+	width: 100%;
+	border-top: 2px #5e5e5e dashed;
+	color: #dedede;
+	font-family: 'Taviraj';
+	font-size: 1.3em;
+	line-height: 1em;
+	padding: 2em 0;
     text-align: center;
 }
+
+
+
+
