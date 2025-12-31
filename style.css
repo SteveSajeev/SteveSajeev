@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 html {
 	scroll-behavior: smooth;
@@ -11,7 +9,7 @@ html {
     box-sizing: border-box;
 }
 body {
-    font-family: 'Maven Pro';
+	font-family: 'Space Mono','';
     color: aliceblue;
     background-color: rgb(10,10,15);
     display: flex;
@@ -36,7 +34,6 @@ header {
 	box-shadow: 0 0 10px 1px black;
 }
 header h2 {
-	font-family: 'Montserrat';
 }
 nav ul {
     display: flex;
@@ -77,10 +74,9 @@ section {
 }
 #home div {
 	margin: 6em 0  0 2em;
-	max-width: 28em;
+	max-width: 48em;
 }
 #home h2 {
-	font-family: 'Montserrat';
 	font-size: 2.9em;
 	font-weight: 900;
 }
@@ -88,7 +84,6 @@ section {
 	color: rgb(245, 30,45);
 }
 #home p {
-	font-family: 'Taviraj';
 	font-size: 1.4em;
 	font-weight: 200;
 	line-height: 1em;
@@ -112,7 +107,6 @@ section {
 	padding-bottom: 8em;
 }
 #about h3 {
-	font-family: 'Montserrat';
 	font-size: 2.5em;
 	font-weight: 700;
 }
@@ -130,7 +124,7 @@ section {
 }
 
 #projects h3 {
-	font-family: 'Montserrat';
+	
 	font-size: 2.5em;
 	font-weight: 700;
 }
@@ -148,11 +142,9 @@ section {
 }
 
 #projects .pitem h4 {
-	font-family: 'Montserrat';
 	font-size: 1.8em;
 }
 #projects .pitem p {
-	font-family: 'Maven Pro';
 	font-size: 1.2em;
 	margin-bottom: 1.3em;
 }
@@ -175,7 +167,6 @@ footer {
 	width: 100%;
 	border-top: 2px #5e5e5e dashed;
 	color: #dedede;
-	font-family: 'Taviraj';
 	font-size: 1.3em;
 	line-height: 1em;
 	padding: 2em 0;
