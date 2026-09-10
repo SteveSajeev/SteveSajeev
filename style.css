@@ -1,178 +1,117 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+/* Amarante */
+@font-face {
+  font-family: 'Amarante';
+  src: url('fonts/Amarante-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Avenir Family */
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir Book.ttf') format('truetype');
+  font-weight: 450; /* Map book weight slightly above regular, or 400 if preferred */
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('fonts/Avenir Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+/* Quicksand Variable */
+@font-face {
+  font-family: 'Quicksand';
+  src: url('fonts/Quicksand_Variable.ttf') format('truetype-variations');
+  font-weight: 300 700; /* Supports a range of weights dynamically */
+  font-style: normal;
+}
 
 html {
 	scroll-behavior: smooth;
+  font-size: 23px;
 }
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+
 body {
-	font-family: 'Space Mono','';
-    color: aliceblue;
-    background-color: rgb(10,10,15);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: 'avenir','';
+  font-size: 0.9rem;
+  color: rgb(250,250,240);
+  background-color: rgb(3,3,3);
+  display: flex;
+  justify-content: center;
 }
 body a {
-    color: rgb(220, 220, 220);
+  color: rgb(140, 190, 220);
 }
 
+.wrapper {
+  width: max(1100px, 45%);
+  min-height: 100vh;
+  padding: 0 2em;
+  background: linear-gradient(45deg, rgba(8,8,8,1), rgba(24,17,15,1), rgba(15,18,25,1));
+}
 
-/* Header styling */
 header {
-    position:sticky;
-	top:0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    padding: 1em 2.8em;
-	background-color: rgb(10,10,15);
-	box-shadow: 0 0 10px 1px black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem 0px;
 }
-header h2 {
+header nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
 }
-nav ul {
-    display: flex;
-    justify-content: space-between;
-}
-nav ul li {
-    list-style-type: none;
-    padding: 0.5em;
-    margin: 0 1em;
-}
-nav a {
-	display: block;
-    text-decoration: none;
-    font-size: 1em;
-    transition: transform 0.2s;
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-}
-nav a:hover {
-	color: rgb(245, 30,45);
-	font-weight: 600;
-	transform: scale(1.5);
+header nav ul li a {
+  margin: 0 0.4rem;
+  padding: 0.3rem;
 }
 
 
-
-
-/* Main styling */
 section {
-	padding: 0 7em;
-	width: 100%;
+  margin: 0 0 2.2em 0;
 }
-
-
-
-/* HOME */
+section h2 {
+  font-weight: 800;
+}
+section p {
+  line-height: 120%;
+}
 #home {
-	height: 60vh;
-}
-#home div {
-	margin: 6em 0  0 2em;
-	max-width: 48em;
-}
-#home h2 {
-	font-size: 2.9em;
-	font-weight: 900;
-}
-#home h2 span {
-	color: rgb(245, 30,45);
-}
-#home p {
-	font-size: 1.4em;
-	font-weight: 200;
-	line-height: 1em;
-	max-width: 100%;
-}
-
-
-#svgtop {
-	background-color: rgb(20,20,40);
-	transition: all 2s;
-}
-#svgbottom {
-	background-color: rgb(10, 10, 15);
-}
-
-/* About Section */
-
-#about {
-	background-color: rgb(20,20,40);
-	padding-top: 2em;
-	padding-bottom: 8em;
-}
-#about h3 {
-	font-size: 2.5em;
-	font-weight: 700;
-}
-#about p {
-	margin-top: 0.8em;
-	font-size: 1.2em;
-}
-
-
-/* Projects Section */
-
-#projects {
-	padding-top: 2em;
-	padding-bottom: 5em;
-}
-
-#projects h3 {
-	
-	font-size: 2.5em;
-	font-weight: 700;
-}
-#projects .items {
-	margin-top: 3em;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-}
-#projects .items .pitem {
-    background-color: rgba(23, 36, 156, 0.64);
-    padding: 2em 1.7em;
-    border-radius: 0.7em;
-}
-
-#projects .pitem h4 {
-	font-size: 1.8em;
-}
-#projects .pitem p {
-	font-size: 1.2em;
-	margin-bottom: 1.3em;
-}
-
-#projects .pitem a {
-	display: block;
-	color: black;
-	font-weight: 500;
-	width: 100%;
-    background-color: rgb(201, 215, 249);
-    border-radius: 0.3em;
-    padding: 0.3em 0.8em;
-    margin: 0.8em 0 0 0;
-}
-
-
-
-
-footer {
-	width: 100%;
-	border-top: 2px #5e5e5e dashed;
-	color: #dedede;
-	font-size: 1.3em;
-	line-height: 1em;
-	padding: 2em 0;
-    text-align: center;
-}
-
-
-
-
+  margin-top: 2em;
