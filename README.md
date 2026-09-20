@@ -3,10 +3,18 @@
 </p>
 
 # Steve Sajeev
- FOSS guy, loves computers, hacker
+(FOSS guy, loves computers, hacker in the traditional sense)
 
+## About me
+I intend to make something useful, someday and publish it to the greater good of everyone, open sourced.
+<p align='center'><img width="30%" src="https://user-images.githubusercontent.com/74038190/213911110-aedbef38-a29f-4b6b-a65c-11608b4f75a5.gif" /></p>
 
+<sub>Currently pursuing a B.Tech in Computer Science & Artificial Intelligence at Muthoot Institute of Technology and Science, Kochi.</sub>
 
+## Wall of Repos
+<img src="https://user-images.githubusercontent.com/74038190/212284094-e50ceae2-de86-4dd6-9f9c-a3ebcb3ede9e.gif" />
+
+## Stacked
 ![Javascript](https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif)
 ![idk](https://user-images.githubusercontent.com/74038190/212257472-08e52665-c503-4bd9-aa20-f5a4dae769b5.gif)
 ![idk](https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif)
