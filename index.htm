@@ -3,49 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Steve P Sajeev</title>
+    <title>Steve Sajeev</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <h2>Steve P Sajeev</h2>
-      <nav>
-        <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-
-    <section id="aboutme">
-      <h2>Hey, I'm <span>Steve</span></h2>
-      <p>I'm a freelance web developer. I build websites for people who want to look good online.</p>
-      <p>I have deep love for coding. For me, its another language that I speak. I started programming from age 11 or 12, I don't remember. I enjoy making new things.</p>
-      <p>I contribute to OSM in my free time.</p>
-    </section>
-
-    <section id="projects">
-      <h2>Projects</h2>
-      <ul>
-        <li>
-          <h4>AsteroidsOnWeb</h4>
-          <p>A small game flying an asteroid in the middle of never ending asteroids. A try at building a game straight from scratch in web.</p>
-          <a href="https://github.com/SteveSajeev/AsteroidsOnWeb">Open Repo</a>
-          <a href="https://stevesajeev.github.io/AsteroidsOnWeb/">WIP Demo</a>
-        </li>
-        <li>
-          <h4>leet-assistant</h4>
-          <p>A tool to easily start solving leetcode problems in your favourite local editor. Fetches template code, test cases etc. locally.</p>
-          <p>Will release soon. wip.</p>
-        </li>
-      </ul>
-    </section>
-      <footer>
-          <p>Website is still under development. Thanks for visiting...<br>With love, Steve.</p>
-
-      </footer>
-  </div>
+  <nav>
+    <h1>steve sajeev</h1>
+    <ul class="sliding">
+      <li>about</li>
+      <li>blog</li>
+      <li>work</li>
+    </ul>
+    <div id="navbtn" class="active">
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg width="27.954" height="21.667" viewBox="0 0 27.954 21.667" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M13.4768 0L26.9536 20.6667L0 20.6667L6.6619 10.4506L13.4768 0Z" fill="none" stroke-width="1" stroke="#E3E3E3" transform="matrix(-1 0 -0 -1 27.454 21.167)" />
+      </svg>
+    </div>
+  </nav>
+  <section class="landingpage">
+    <div class="landingpage"> 
+      <p id="landingtitle">a</p>
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg width="10px" height="77.515" viewBox="0 0 430.471 77.515" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <path d="M0 0C37.1084 3.05176e-05 67.8995 70 108.561 70C149.223 70 158.008 0 228.65 0C299.292 0 278.33 73.2842 338.696 76.4092C399.061 79.5342 392.277 12.5 429.471 12.5L0" fill="none" stroke-width="1" stroke="#323232" transform="translate(0.5 0.5)" />
+      </svg>
+    </div>
+  </section>
+  <section class="about">
+    <div class="about">
+      <h3>about me</h3>
+      <p>I'm Steve. A tinkerer who fell into this rabbit hole a long time ago. I enjoy making fun stuff.</p>
+    </div>
+  </section>
+  <section class="projects">
+    <div class="projects">
+      <h3>projects</h3>
+      <div class="projectlist">
+        <div class="item">
+          <div class="logo"></div>
+          <div class="text">
+            <h6>AsteroidsOnWeb</h6>
+            <p>a from-scratch web game where you fly a rocket avoiding asteroids</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="logo"></div>
+          <div class="text">
+            <h6>Soundswitcher</h6>
+            <p>Cinnamon applet that allows easy switching between multiple devices</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 </body>
+<script src="app.js"></script>
 </html>
