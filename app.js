@@ -53,5 +53,16 @@ window.addEventListener("load", ()=>{
   title = document.getElementById("landingtitle");
   title.innerText = "";
   animate()
-});
 
+  // regarding navbar
+  navslide = document.getElementById("navslide");
+  navbtn = document.getElementById("navbtn");
+  navbtn.addEventListener("click", ()=>{
+    navbtn.classList.toggle("active")
+    if(navbtn.classList.contains("active")){
+      navslide.classList.add('active');
+    } else {
+      navslide.classList.remove('active');
+    }
+  });
+});

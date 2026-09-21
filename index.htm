@@ -3,24 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>Steve Sajeev</title>
     <link rel="stylesheet" href="./style.css" type="text/css">
 </head>
 <body>
   <nav>
     <h1>steve sajeev</h1>
-    <ul class="sliding">
-      <li>about</li>
-      <li>blog</li>
-      <li>work</li>
+    <ul class="sliding" id="navslide">
+      <a href="#about"><li>about</li></a>
+      <a href="/blog"><li>blog</li></a>
+      <a href="#projects"><li>work</li></a>
     </ul>
-    <div id="navbtn" class="active">
+    <div id="navbtn" class="">
       <?xml version="1.0" encoding="utf-8"?>
-      <svg width="27.954" height="21.667" viewBox="0 0 27.954 21.667" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M13.4768 0L26.9536 20.6667L0 20.6667L6.6619 10.4506L13.4768 0Z" fill="none" stroke-width="1" stroke="#E3E3E3" transform="matrix(-1 0 -0 -1 27.454 21.167)" />
+      <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M50 5 L5 95 L95 95 Z" fill="none" stroke-width="2" stroke="#E3E3E3" transform="" />
       </svg>
     </div>
   </nav>
+
   <section class="landingpage">
     <div class="landingpage"> 
       <p id="landingtitle">a</p>
@@ -30,13 +34,15 @@
       </svg>
     </div>
   </section>
-  <section class="about">
+
+  <section class="about" id="about">
     <div class="about">
       <h3>about me</h3>
       <p>I'm Steve. A tinkerer who fell into this rabbit hole a long time ago. I enjoy making fun stuff.</p>
     </div>
   </section>
-  <section class="projects">
+
+  <section class="projects" id="projects">
     <div class="projects">
       <h3>projects</h3>
       <div class="projectlist">
@@ -57,6 +63,7 @@
       </div>
     </div>
   </section>
+
 </body>
 <script src="app.js"></script>
 </html>

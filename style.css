@@ -17,6 +17,10 @@ body {
   font-weight: 100;
 }
 
+a {
+  text-decoration: none;
+  color: #f1c1f1;
+}
 
 nav {
   display: flex;
@@ -34,21 +38,41 @@ nav h1  {
 
 nav ul {
   list-style-type: none;
-  display: none;
+  display: block;
+  position: fixed;
+  right: -25%;
+  top:10vh;
+  transition: right 0.5s;
 }
+
 
 nav ul li {
   font-size: 1rem;
-  font-weight: 100;
+  font-weight: 200;
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
+}
+nav ul.active {
+  right: 12px;
 }
 
 #navbtn {
   display: block;
   padding: 1.6rem 0.7rem;
+  cursor: pointer;
+  transition: transform 0.5s ease-out;
+  transform: translateY(5%);
+  -webkit-tap-highlight-color: transparent;
 }
-
+#navbtn:active {
+  transform: translateY(5%) scale(0.5);
+}
+#navbtn.active {
+  transform: translateY(5%) rotate(180deg);
+}
+#navbtn.active:active {
+  transform: translateY(5%) scale(0.5) rotate(180deg);
+}
 
 /* main content */ 
 .landingpage  {
@@ -62,7 +86,7 @@ nav ul li {
 .landingpage p {
   text-align: center;
   font-size: 2.8rem;
-  font-weight: 100;
+  font-weight: 200;
   margin-top:auto;
   color: #aaaaaa;
 }
@@ -84,7 +108,7 @@ nav ul li {
 }
 .about p {
   margin-top: 0.8rem;
-  font-weight: 100;
+  font-weight: 200;
   font-size: 1.5rem;
   color: #999999;
 }
@@ -96,6 +120,19 @@ nav ul li {
 .projects h3 {
   font-weight: 200;
   font-size: 2.5rem;
+}
+h3 {
+  position: relative;
+}
+h3::before {
+  content: "#";
+  display: inline;
+  position: absolute;
+  left: -1.1ch;
+  color: #444444;
+}
+section:target h3::before {
+  color: rgba(240,100,200,0.7);
 }
 .projects .projectlist {
   display: flex;
